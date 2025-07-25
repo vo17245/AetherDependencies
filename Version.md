@@ -39,3 +39,8 @@ commit: 83e7e1132d93777e3732dfaae26b0f3703be2036
 
 https://github.com/fribidi/fribidi.git
 commit: b28f43bd3e8e31a5967830f721bab218c1aa114c
+
+## harfbuzz
+
+https://github.com/harfbuzz/harfbuzz.git
+commit: bdbcd8f632105aeb66c6a7ad0d650320212a3057
