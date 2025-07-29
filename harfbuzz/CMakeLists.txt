@@ -27,7 +27,7 @@ endif ()
 
 ## HarfBuzz build configurations
 option(HB_HAVE_CAIRO "Enable cairo interop helpers" OFF)
-option(HB_HAVE_FREETYPE "Enable freetype interop helpers" OFF)
+option(HB_HAVE_FREETYPE "Enable freetype interop helpers" ON)
 option(HB_HAVE_GRAPHITE2 "Enable Graphite2 complementary shaper" OFF)
 option(HB_HAVE_GLIB "Enable glib unicode functions" OFF)
 option(HB_HAVE_ICU "Enable icu unicode functions" OFF)
@@ -242,6 +242,10 @@ if (HB_HAVE_FREETYPE AND NOT TARGET freetype)
 
   check_funcs(FT_Get_Var_Blend_Coordinates FT_Set_Var_Blend_Coordinates FT_Done_MM_Var FT_Get_Transform)
 endif ()
+if(HB_HAVE_FREETYPE)
+list(APPEND project_headers ${PROJECT_SOURCE_DIR}/src/hb-ft.h)
+message(STATUS "[Harfbuzz] add hb-ft.h header")
+endif()
 
 if (HB_HAVE_FREETYPE)
   list(APPEND PC_REQUIRES_PRIV "freetype2 >= 12.0.6")
