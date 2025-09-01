@@ -27,7 +27,7 @@ install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/src/"
 )
 # 2. 配置并生成 Config 文件
 configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/CMake/${MODULE_NAME}Config.cmake.in"  # 需要你自己写
+    "${CMAKE_CURRENT_SOURCE_DIR}/CMake/${MODULE_NAME}Config.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/${MODULE_NAME}Config.cmake"
     INSTALL_DESTINATION ${MODULE_NAME}/
 )
