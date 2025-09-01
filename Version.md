@@ -44,3 +44,8 @@ commit: b28f43bd3e8e31a5967830f721bab218c1aa114c
 
 https://github.com/harfbuzz/harfbuzz.git
 commit: bdbcd8f632105aeb66c6a7ad0d650320212a3057
+
+## efsw
+
+https://github.com/SpartanJ/efsw.git
+commit: b81cd84d765b255c943a93ae20b8a1d5fe7033dc
