@@ -49,3 +49,9 @@ commit: bdbcd8f632105aeb66c6a7ad0d650320212a3057
 
 https://github.com/SpartanJ/efsw.git
 commit: b81cd84d765b255c943a93ae20b8a1d5fe7033dc
+
+## SPIRV-Cross
+
+https://github.com/KhronosGroup/SPIRV-Cross.git
+commit id: 072444287f4e139c178d6d8fe32e04a0d2c34e8b
+commit date: Fri Aug 29 14:34:55 2025
