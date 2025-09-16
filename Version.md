@@ -55,3 +55,13 @@ commit: b81cd84d765b255c943a93ae20b8a1d5fe7033dc
 https://github.com/KhronosGroup/SPIRV-Cross.git
 commit id: 072444287f4e139c178d6d8fe32e04a0d2c34e8b
 commit date: Fri Aug 29 14:34:55 2025
+
+## stduuid
+
+https://github.com/mariusbancila/stduuid.git
+commit 3afe7193facd5d674de709fccc44d5055e144d7a 
+Date:   Thu Jun 16 12:21:45 2022 
+
+build notes: 
+enable UUID_USING_CXX20_SPAN in stduuid CMakeLists.txt
+enable UUID_ENABLE_INSTALL in stduuid CMakeLists.txt
