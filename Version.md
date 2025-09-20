@@ -65,3 +65,14 @@ Date:   Thu Jun 16 12:21:45 2022
 build notes: 
 enable UUID_USING_CXX20_SPAN in stduuid CMakeLists.txt
 enable UUID_ENABLE_INSTALL in stduuid CMakeLists.txt
+
+## nlohmann/json
+
+https://github.com/nlohmann/json.git
+commit 199dea11b17c533721b26249e2dcaee6ca1d51d3 
+
+## tinygltf
+
+https://github.com/syoyo/tinygltf.git
+commit 37250b3470b517fd6823ee82d6e0495695bb7924 (HEAD -> release, tag: v2.9.6, origin/release, origin/HEAD)
+Date:   Tue May 20 06:31:38 2025
