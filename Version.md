@@ -76,3 +76,9 @@ commit 199dea11b17c533721b26249e2dcaee6ca1d51d3
 https://github.com/syoyo/tinygltf.git
 commit 37250b3470b517fd6823ee82d6e0495695bb7924 (HEAD -> release, tag: v2.9.6, origin/release, origin/HEAD)
 Date:   Tue May 20 06:31:38 2025
+
+## JoltPhysics
+
+https://github.com/jrouwe/JoltPhysics
+commit 2bce8a6bdcafdf6b1140a080ebedcfbcdba74313
+Date:   Mon Oct 20 20:43:36 2025
