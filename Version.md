@@ -82,3 +82,9 @@ Date:   Tue May 20 06:31:38 2025
 https://github.com/jrouwe/JoltPhysics
 commit 2bce8a6bdcafdf6b1140a080ebedcfbcdba74313
 Date:   Mon Oct 20 20:43:36 2025
+
+## concurrentqueue
+
+https://github.com/cameron314/concurrentqueue
+commit c68072129c8a5b4025122ca5a0c82ab14b30cb03
+Date:   Sat Jul 5 22:13:14 2025
