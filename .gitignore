@@ -1,9 +1,9 @@
 /compile_commands.json
 /.cache/
 /Build/
-/DummyBuild/
 /tmp/
 /CMake/Local.cmake
 .vscode/
 /Install
-/Packages
+/Packages/
+__pycache__/

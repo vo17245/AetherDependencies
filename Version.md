@@ -88,3 +88,12 @@ Date:   Mon Oct 20 20:43:36 2025
 https://github.com/cameron314/concurrentqueue
 commit c68072129c8a5b4025122ca5a0c82ab14b30cb03
 Date:   Sat Jul 5 22:13:14 2025
+
+
+## zlib
+
+https://github.com/madler/zlib.git
+commit 570720b0c24f9686c33f35a1b3165c1f568b96be 
+Date:   Mon Dec 8 05:30:18 2025
+
+## libpng

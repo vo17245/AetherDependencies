@@ -1,4 +1,2 @@
-cd ..
-cmake --build Build --config Debug
-cd Scripts
+python build.py
 pause
