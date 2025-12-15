@@ -5,7 +5,7 @@ def build_no_dependencies(build_type:str):
     os.chdir("..")
     run_command(["cmake","-B",f"Build/NoDependencies/{build_type}","-S",".",f"-DCMAKE_BUILD_TYPE={build_type}",
                  "-G","Visual Studio 17 2022","-A","x64",f"-DCMAKE_INSTALL_PREFIX=Packages/{build_type}",
-                 "-D","GLSLANGE_ENABLE_INSTALL=ON"])
+                 "-D","GLSLANG_ENABLE_INSTALL=ON"])
     run_command(["cmake","--build",f"Build/NoDependencies/{build_type}","--config",build_type])
     run_command(["cmake","--install",f"Build/NoDependencies/{build_type}","--config",build_type])
     os.chdir(cwd)
