@@ -26,10 +26,6 @@ https://github.com/mlabbe/nativefiledialog#file-filter-syntax
 
 commit 67345b80ebb429ecc2aeda94c478b3bcc5f7888e
 
-
-
-
-
 ## RectangleBinPack
 
 https://github.com/juj/RectangleBinPack
@@ -97,3 +93,13 @@ commit 570720b0c24f9686c33f35a1b3165c1f568b96be
 Date:   Mon Dec 8 05:30:18 2025
 
 ## libpng
+
+https://github.com/pnggroup/libpng.git
+commit 0f07f70aa55e4771d00b0f8a238dca992fbb60e4
+Date:  Dec 8, 2025
+
+## msdfgen
+
+https://github.com/Chlumsky/msdfgen.git
+commit 1874bcf7d9624ccc85b4bc9a85d78116f690f35b
+Date:   Sun Nov 30 10:38:09 2025
