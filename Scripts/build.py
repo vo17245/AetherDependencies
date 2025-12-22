@@ -44,6 +44,8 @@ def build_msdfgen(build_type:str):
         "-DCMAKE_BUILD_TYPE=Debug",
         f"-DCMAKE_INSTALL_PREFIX=Packages/{build_type}",
         "-DMSDFGEN_INSTALL=ON",
+        "-DMSDFGEN_USE_SKIA=OFF",
+        "-DMSDFGEN_DYNAMIC_RUNTIME=ON",
     ]
     build_lib("msdfgen",build_type,"msdfgen",options)
 os.system("chcp 65001>nul")
