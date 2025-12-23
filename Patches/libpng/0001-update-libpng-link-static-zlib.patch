@@ -1,0 +1,27 @@
+From 96296cf8598a03e2d32fa13eb5ce7df2ef11ffea Mon Sep 17 00:00:00 2001
+From: linyingxiong <87613099+vo17245@users.noreply.github.com>
+Date: Tue, 23 Dec 2025 14:52:18 +0800
+Subject: [PATCH] update: libpng link static zlib
+
+---
+ libpng/CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/libpng/CMakeLists.txt b/libpng/CMakeLists.txt
+index 1080dcc..2d3a2e1 100644
+--- a/libpng/CMakeLists.txt
++++ b/libpng/CMakeLists.txt
+@@ -138,8 +138,8 @@ if(PNG_BUILD_ZLIB)
+ endif()
+ 
+ # Find the zlib library.
+-find_package(ZLIB REQUIRED)
+-set(PNG_LINK_LIBRARIES ZLIB::ZLIB)
++find_package(ZLIB REQUIRED CONFIG)
++set(PNG_LINK_LIBRARIES ZLIB::ZLIBSTATIC)
+ 
+ # Find the math library (unless we already know it's not available or
+ # not needed).
+-- 
+2.44.0.windows.1
+
