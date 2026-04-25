@@ -103,3 +103,9 @@ Date:  Dec 8, 2025
 https://github.com/Chlumsky/msdfgen.git
 commit 1874bcf7d9624ccc85b4bc9a85d78116f690f35b
 Date:   Sun Nov 30 10:38:09 2025
+
+## sdl
+
+https://github.com/libsdl-org/SDL.git
+commit f0d958d850144ae87b90d4631a4eb957088137cc
+Date:   Sat Nov 22 18:41:03 2025 
