@@ -61,10 +61,21 @@ def build_zlib(build_type:str):
         "-DBUILD_SHARED_LIBS=OFF",
     ]
     build_lib("zlib",build_type,"zlib",options)
+
+
 def build_sdl(build_type:str):
     options=[
         f"-DCMAKE_BUILD_TYPE={build_type}",
         f"-DCMAKE_INSTALL_PREFIX=Packages/{build_type}",
+        "-DSDL_MSVC_STATIC_RUNTIME=ON",
+        "-DSDL_LIBC=ON",
+        "-DSDL_STATIC=ON",
+        "-DSDL_SHARED=OFF",
+        "-DSDL_TESTS=OFF",
+        "-DSDL_TEST_LIBRARY=OFF",
+        "-DSDL_EXAMPLES=OFF",
+        "-DSDL_INSTALL=ON",
+        "-DCMAKE_DEBUG_POSTFIX=d"
     ]
     build_lib("sdl",build_type,"SDL",options)
 os.system("chcp 65001>nul")

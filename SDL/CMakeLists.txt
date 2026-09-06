@@ -7,6 +7,13 @@ endif()
 # See docs/release_checklist.md
 project(SDL3 LANGUAGES C VERSION "3.3.3")
 
+if(WIN32 AND MSVC)
+  option(SDL_MSVC_STATIC_RUNTIME "Use the static MSVC runtime library" ON)
+  if(SDL_MSVC_STATIC_RUNTIME)
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+  endif()
+endif()
+
 if(CMAKE_SOURCE_DIR STREQUAL PROJECT_SOURCE_DIR)
   set(SDL3_MAINPROJECT ON)
 else()
