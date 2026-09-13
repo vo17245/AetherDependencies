@@ -20,6 +20,13 @@ endif()
 set(MODULE_NAME nativefiledialog)
 add_library(${MODULE_NAME} STATIC ${FILES})
 
+if(UNIX AND NOT APPLE)
+    find_package(PkgConfig REQUIRED)
+    pkg_check_modules(GTK3 REQUIRED IMPORTED_TARGET gtk+-3.0)
+
+    target_link_libraries(nativefiledialog PRIVATE PkgConfig::GTK3)
+endif()
+
 
 
 

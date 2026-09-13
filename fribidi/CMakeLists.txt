@@ -11,11 +11,11 @@ target_compile_definitions(${MODULE_NAME} PRIVATE "HAVE_CONFIG_H")
 target_compile_definitions(${MODULE_NAME} PUBLIC "FRIBIDI_LIB_STATIC")
 
 target_include_directories(${MODULE_NAME} PUBLIC 
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Source/public>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Source/Public>
     $<INSTALL_INTERFACE:${MODULE_NAME}/include>
 )
 
-target_include_directories(${MODULE_NAME} PRIVATE "Source/private")
+target_include_directories(${MODULE_NAME} PRIVATE "Source/Private")
 
 
 
