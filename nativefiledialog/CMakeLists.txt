@@ -22,9 +22,15 @@ add_library(${MODULE_NAME} STATIC ${FILES})
 
 if(UNIX AND NOT APPLE)
     find_package(PkgConfig REQUIRED)
-    pkg_check_modules(GTK3 REQUIRED IMPORTED_TARGET gtk+-3.0)
+    pkg_check_modules(GTK3 REQUIRED IMPORTED_TARGET
+        NO_CMAKE_PATH
+        NO_CMAKE_ENVIRONMENT_PATH
+        gtk+-3.0
+    )
 
-    target_link_libraries(nativefiledialog PRIVATE PkgConfig::GTK3)
+    # nativefiledialog is a static library, so GTK is part of its link
+    # interface and must be available to consumers of the installed target.
+    target_link_libraries(${MODULE_NAME} PUBLIC PkgConfig::GTK3)
 endif()
 
 
@@ -67,4 +73,3 @@ install(EXPORT ${MODULE_NAME}Targets
     FILE ${MODULE_NAME}Targets.cmake
     DESTINATION ${MODULE_NAME}
 )
-
