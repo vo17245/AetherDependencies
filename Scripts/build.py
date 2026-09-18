@@ -100,6 +100,21 @@ def build_sdl(build_type:str):
         "-DCMAKE_DEBUG_POSTFIX=d"
     ]
     build_lib("sdl",build_type,"SDL",options)
+
+def build_JoltPhysics(build_type:str):
+    options=[
+        f"-DCMAKE_BUILD_TYPE={build_type}",
+        f"-DCMAKE_INSTALL_PREFIX=Packages/{build_type}",
+        "-DJPH_BUILD_TESTS=OFF",
+        "-DJPH_BUILD_EXAMPLES=OFF",
+        "-DJPH_BUILD_TOOLS=OFF",
+        "-DJPH_BUILD_SHARED_LIBS=OFF",
+        "-DJPH_BUILD_STATIC_LIBS=ON",
+        "-DJPH_DOUBLE_PRECISION=ON",
+    ]
+
+    build_lib("JoltPhysics",build_type,"JoltPhysics/Build",options)
+
 if platform.system() == "Windows":
     os.system("chcp 65001>nul")
 build_no_dependencies("Debug")
@@ -107,3 +122,4 @@ build_zlib("Debug")
 build_libpng("Debug")
 build_msdfgen("Debug")
 build_sdl("Debug")
+build_JoltPhysics("Debug")
