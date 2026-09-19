@@ -110,7 +110,7 @@ def build_JoltPhysics(build_type:str):
         "-DJPH_BUILD_TOOLS=OFF",
         "-DJPH_BUILD_SHARED_LIBS=OFF",
         "-DJPH_BUILD_STATIC_LIBS=ON",
-        "-DJPH_DOUBLE_PRECISION=ON",
+        "-DDOUBLE_PRECISION=ON",
     ]
 
     build_lib("JoltPhysics",build_type,"JoltPhysics/Build",options)
