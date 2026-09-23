@@ -3,15 +3,15 @@ if(WIN32)
     "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_common.c" 
     "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_win.cpp"
     )
-elseif(UNIX)
-set(FILES
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_common.c" 
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_gtk.c"
-    )
 elseif(APPLE)
-set(FILES
+    set(FILES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_common.c" 
     "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_cocoa.m"
+    )
+elseif(UNIX)
+    set(FILES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_common.c" 
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_gtk.c"
     )
 else()
     message(FATAL_ERROR "Unsupported platform")

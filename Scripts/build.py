@@ -105,11 +105,11 @@ def build_JoltPhysics(build_type:str):
     options=[
         f"-DCMAKE_BUILD_TYPE={build_type}",
         f"-DCMAKE_INSTALL_PREFIX=Packages/{build_type}",
-        "-DJPH_BUILD_TESTS=OFF",
-        "-DJPH_BUILD_EXAMPLES=OFF",
-        "-DJPH_BUILD_TOOLS=OFF",
-        "-DJPH_BUILD_SHARED_LIBS=OFF",
-        "-DJPH_BUILD_STATIC_LIBS=ON",
+        "-DTARGET_UNIT_TESTS=OFF",
+        "-DTARGET_HELLO_WORLD=OFF",
+        "-DTARGET_PERFORMANCE_TEST=OFF",
+        "-DTARGET_SAMPLES=OFF",
+        "-DTARGET_VIEWER=OFF",
         "-DDOUBLE_PRECISION=ON",
     ]
 
