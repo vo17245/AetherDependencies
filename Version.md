@@ -109,3 +109,8 @@ Date:   Sun Nov 30 10:38:09 2025
 https://github.com/libsdl-org/SDL.git
 commit f0d958d850144ae87b90d4631a4eb957088137cc
 Date:   Sat Nov 22 18:41:03 2025 
+
+## tinyexr
+
+https://github.com/syoyo/tinyexr.git
+commit 644148d0fd6b1b204a68a902dc963a70c749b417
